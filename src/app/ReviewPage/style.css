@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@900;700&display=swap');
+/* Base */
+
+.textst {
+ 
+    font-family: "Gwendolyn", cursive;
+    font-weight: 400;
+    font-style: normal;
+ 
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 150px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
