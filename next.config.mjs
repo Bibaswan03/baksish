@@ -1,5 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "baksish.in",
+          },
+        ],
+        destination: "https://baksish.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     // domains: ['tipppz-emp-photos.s3.ap-south-1.amazonaws.com'],
     remotePatterns: [
