@@ -3,14 +3,14 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*",
+        source: '/:path*',
         has: [
           {
-            type: "host",
-            value: "baksish.in",
+            type: 'host',
+            value: 'www.baksish.com',
           },
         ],
-        destination: "https://baksish.com/:path*",
+        destination: 'https://www.baksish.in/:path*',
         permanent: true,
       },
     ];

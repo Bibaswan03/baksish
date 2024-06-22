@@ -107,7 +107,9 @@ const PaymentButton = (empdata) => {
               alert("Payment verification failed");
               window.location.reload();
             }
-            //setIsProcessingPayment(false); // Hide loader after payment processing
+            setTimeout(() => {
+              setIsProcessingPayment(false); // Hide loader after payment processing
+            }, 3000);//Remove the loader after coming back from the next page
           },
           prefill: {
             name: empdata.emp_data.name,
